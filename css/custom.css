@@ -1,0 +1,61 @@
+.wrapper{
+    max-width:750px;
+    margin:0 auto;
+
+}
+
+.oe-form .row-fluid{
+    margin-bottom:10px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+ body{
+
+ }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    body{
+
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    body{
+      background-color:#d0e9c6;
+    }
+.oe-form .row-fluid .span6{
+    width:48.72%;
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+
+    .oe-form .row-fluid .span4,
+    .oe-form .row-fluid .span2
+    {
+        width:31.92%;
+        display:inline-block;
+        margin:0;
+        padding:0;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body{
+       background-color: #eed3d7;
+    }
+
+    .oe-form .row-fluid .span4{
+        width:31.92%;
+        display:inline-block;
+        margin:0;
+        padding:0;
+    }
+
+
+}
