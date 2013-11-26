@@ -8,11 +8,12 @@
 
 </head>
 <body>
-<div class="wrapper">
+<div class="container">
+<section class="row-fluid">
 <form class="oe-form">
-    <legend>About You</legend>
+    <p class="required note">All fields are required unless stated otherwise.</p>
+    <legend class="text-center">About You</legend>
      <fieldset>
-
          <div class="row-fluid">
              <div class="span6">
                 <label>First Name</label>
@@ -21,85 +22,124 @@
 
              <div class="span6">
                  <label>Last Name</label>
-                 <input type="input" class="input-block-level span10">
+                 <input type="input" class="input-block-level span12">
              </div>
          </div>
 
          <div class="row-fluid">
              <div class="span6">
                  <label for="">Email</label>
-                 <input type="input" class="input-block-level span10">
+                 <input type="input" class="input-block-level span12">
              </div>
 
              <div class="span6">
                  <label for="">Phone</label>
-                 <input type="input" class="input-block-level span10">
+                 <input type="input" class="input-block-level span12">
              </div>
          </div>
-
-
 
          <div class="row-fluid">
              <div class="span6">
                  <label for="">Birthday</label>
                  <select class="span4">
-                     <option></option>
-                     <option></option>
-                     <option></option>
-                     <option></option>
-                     <option></option>
-
-
+                     <option>Month</option>
+                     <option>Jan</option>
+                     <option>Feb</option>
+                     <option>Mar</option>
+                     <option>Apr</option>
                  </select>
-                 <input type="input" class="span2">
-                 <input type="input" class="span2">
+                 <select class="span4">
+                     <option selected>Day</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                 </select>
+
+                <select class="span4">
+                    <option selected>Year</option>
+                    <option>1970</option>
+                    <option>1971</option>
+                    <option>1972</option>
+                    <option>1973</option>
+                </select>
              </div>
 
              <div class="span6">
-                 <label for="">Occupation</label>
-                 <input type="input">
+                 <label for="">Gender</label>
+                 <select class="span3">
+                     <option>Select</option>
+                     <option>F</option>
+                     <option>M</option>
+                 </select>
              </div>
          </div>
          <div class="row-fluid">
              <div class="span6">
-                 <label for="">Gender</label>
-                 <select class="span2">
-                     <option>F</option>
-                     <option>M</option>
+                 <label for="">Occupation</label>
+                 <select class="span12">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
                  </select>
              </div>
 
              <div class="span6">
                  <label for="">Highest Level of Education</label>
-                 <input type="input">
+                 <select class="span12">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                 </select>
+             </div>
+         </div>
+         </fieldset><!-- end of personal info-->
+
+
+         <fieldset><!-- start of shipping address-->
+           <div class="row-fluid">
+               <label class="span4"><strong>Shipping Address</strong></label>
+           </div>
+
+         <div class="row-fluid">
+             <div class="span6">
+                 <label for="">Country</label>
+                 <select class="span12">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                 </select>
              </div>
          </div>
 
          <div class="row-fluid">
              <div class="span6">
-                 <label for="">Address 1 </label>
-                 <input type="input" class="span10">
+                 <label for="">Shipping Address 1 </label>
+                 <input type="input" class="span12">
              </div>
-
              <div class="span6">
-                 <label for="">Address 2</label>
-                 <input type="input" class="span10">
+                 <label for="">Shipping Address 2 </label>
+                 <input type="input" class="span12">
              </div>
          </div>
-
-
-
 
          <div class="row-fluid">
              <div class="span6">
                  <label for="">City</label>
-                 <input type="input" class="span10">
+                 <input type="input" class="span12">
             </div>
 
              <div class="span6">
                  <div class="span6">
                  <label for="" class="">State</label>
-                 <select type="input" class="span">
+                 <select type="input" class="span12" >
                      <option>NJ</option>
                      <option>NJ</option>
                      <option>NJ</option>
@@ -113,19 +153,130 @@
 
                  <div class="span6">
                      <label for="" >Zip</label>
-                     <input type="input" class="span3" >
+                     <input type="input" class="span12"  >
                  </div>
              </div>
          </div>
+     </fieldset><!--end of shipping address-->
 
 
-     </fieldset>
+    <fieldset><!-- start of billing address-->
+        <div class="row-fluid">
+               <label class="span2"><strong>Billing Address</strong></label>
+                <label class="checkbox span9">
+                    <input type="checkbox" value="">
+                    Billing address is the same as shipping address.
+                </label>
+            </div>
+        <div class="row-fluid">
+            <div class="span6">
+                <label for="">Country</label>
+                <select class="span12">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span6">
+                <label for="">Billing Address 1 </label>
+                <input type="input" class="span12">
+            </div>
+            <div class="span6">
+                <label for="">Billing Address 2 </label>
+                <input type="input" class="span12">
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span6">
+                <label for="">City</label>
+                <input type="input" class="span12">
+            </div>
+
+            <div class="span6">
+                <div class="span6">
+                    <label for="" class="">State</label>
+                    <select type="input" class="span12" >
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                        <option>NJ</option>
+                    </select>
+                </div>
+
+                <div class="span6">
+                    <label for="" >Zip</label>
+                    <input type="input" class="span12"  >
+                </div>
+            </div>
+        </div>
+
+    </fieldset> <!--end of billing address-->
+
+    <fieldset>
+
+        <legend class="text-center">Payment Info<span class="pull-right note"><i class="icon-lock"></i> secure checkout </span></legend>
+        <fieldset>
+            <div class="row-fluid">
+                <div class="span6">
+                    <label>Name as listed on card</label>
+                    <input type="input" class=" input-block-level span12">
+                </div>
+
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <label for="">Credit Card Number</label>
+                    <input type="input" class="input-block-level span12">
+                </div>
+
+                <div class="span6 credit-cards">
+                    <label>&nbsp;</label>
+                    <i class="icon-cc-visa-on"></i>
+                    <i class="icon-cc-mc-on"></i>
+                    <i class="icon-cc-amex-on"></i>
+                    <i class="icon-cc-discover-on"></i>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+               <div class="span6">
+                   <div class="span6">
+                       <label>Expiration Month</label>
+                       <select class="span12"></select>
+                   </div>
+                   <div class="span6">
+                       <label>Expiration Year</label>
+                       <select class="span12"></select>
+                   </div>
+
+               </div>
+
+
+
+            </div>
 
 
 
 
-</form>
 
+
+    </fieldset>
+
+
+ </form>
+</section>
 </div>
 
 
