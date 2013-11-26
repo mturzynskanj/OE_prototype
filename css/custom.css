@@ -1,20 +1,37 @@
-.oe-form{
+body .online-enroll{
+   color:#999;
+}
+
+.online-enroll h1,
+.online-enroll h2,
+.online-enroll h3,
+.online-enroll h4,
+.online-enroll h5,
+.online-enroll h6{
+    color:#666;
+    font-weight: normal;
+}
+
+
+
+.online-enroll{
     max-width:800px;
+    margin:0 auto;
+}
+
+.online-enroll aside p{
+    font-size:18px;
+    text-align: justify;
+    line-height:24px;
+}
+
+.online-enroll form{
+    max-width:640px;
     margin:0 auto;
 }
 
 form .row-fluid{
     margin-bottom:10px;
-}
-
-form .required{
-   color:red;
-}
-
-form .note{
-    font-style:italic;
-    font-size:12px;
-    margin:0px 0px 10px;
 }
 
 fieldset{
@@ -71,11 +88,68 @@ fieldset{
     background-position: -400px -500px;
 }
 
-
-
 .credit-cards label{
     margin-bottom:0;
 }
+ /* temporary copied from mkxp.css file */
+
+/*form select, form textarea, form input[type="text"], form input[type="password"], form input[type="datetime"], form input[type="datetime-local"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="week"], form input[type="number"], form input[type="email"], form input[type="url"], form input[type="search"], form input[type="tel"], form input[type="color"], form .uneditable-input, form input, .btn {*/
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*margin: 0 0 20px;*/
+    /*padding: 8px 10px;*/
+    /*height: auto;*/
+    /*width: 100%;*/
+    /*font-size: 18px;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*-webkit-border-radius: 3px;*/
+    /*-moz-border-radius: 3px;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+.btn-iin {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #da4f49;
+    *background-color: #8e0017;
+    background-image: -moz-linear-gradient(top, #da0016, #8e0017);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da0016), to(#8e0017));
+    background-image: -webkit-linear-gradient(top, #da0016, #8e0017);
+    background-image: -o-linear-gradient(top, #da0016, #8e0017);
+    background-image: linear-gradient(to bottom, #da0016, #8e0017);
+    background-repeat: repeat-x;
+    border-color: #8e0017 #8e0017 #802420;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#da0016', endColorstr='#8e0017', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: pointer;
+}
+.btn-iin:hover, .btn-iin:active, .btn-iin.active, .btn-iin.disabled, .btn-iin[disabled] {
+    color: #ffffff;
+    background-color: #8e0017;
+    *background-color: #a9302a;
+    text-decoration: none;
+}
+.btn-iin:active, .btn-iin.active {
+    background-color: #942a25 \9;
+}
+
+
+
+
+
+/*utility */
+
+.required{
+    color:red;
+}
+
+.note{
+    font-style:italic;
+    font-size:12px;
+    margin:0px 0px 10px;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
  body{
@@ -96,8 +170,6 @@ fieldset{
       background-color:#d0e9c6;
     }
 
-
-
 }
 
 /* Landscape phones and down */
@@ -105,8 +177,5 @@ fieldset{
     body{
        background-color: #eed3d7;
     }
-
-
-
 
 }

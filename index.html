@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="js/Vendors/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="js/Vendors/bootstrap/css/bootstrap-responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
 
 </head>
 <body>
-<div class="container">
+<div class="container online-enroll">
+<div class="pagination-centered pagination pagination-large">
+    <ul>
+        <li class="disabled">Course</li>
+        <li class="disabled">Tuition Plan</li>
+        <li class="disabled">About You</li>
+        <li class="disabled">Payment</li>
+
+    </ul>
+
+</div>
 <section class="row-fluid">
-<form class="oe-form">
+<form>
     <p class="required note">All fields are required unless stated otherwise.</p>
     <legend class="text-center">About You</legend>
      <fieldset><!-- start of about me-->
@@ -98,9 +110,9 @@
              </div>
          </div>
          </fieldset><!-- end of about me-->
+     <hr>
 
-
-         <fieldset><!-- start of shipping address-->
+    <fieldset><!-- start of shipping address-->
            <div class="row-fluid">
                <label class="span4"><strong>Shipping Address</strong></label>
            </div>
@@ -158,11 +170,11 @@
              </div>
          </div>
      </fieldset><!--end of shipping address-->
-
+    <hr>
 
     <fieldset><!-- start of billing address-->
         <div class="row-fluid">
-               <label class="span2"><strong>Billing Address</strong></label>
+               <label class="span3"><strong>Billing Address</strong></label>
                 <label class="checkbox span9">
                     <input type="checkbox" value="">
                     Billing address is the same as shipping address.
@@ -222,11 +234,12 @@
         </div>
 
     </fieldset> <!--end of billing address-->
+    <hr>
 
     <fieldset> <!--start of payment info -->
 
         <legend class="text-center">Payment Info<span class="pull-right note"><i class="icon-lock"></i> secure checkout </span></legend>
-        <fieldset>
+
             <div class="row-fluid">
                 <div class="span6">
                     <label>Name as listed on card</label>
@@ -264,6 +277,15 @@
                </div>
             </div>
     </fieldset> <!--end of payment-->
+
+
+    <div class="form-actions">
+        <button class="btn btn-large" name="Previous" type="reset" value="Previous">Previous</button>
+        <button class="btn btn-iin btn-large" name="commit" type="submit" value="Next">Next</button>
+
+    </div>
+
+
 
 
  </form>
